@@ -107,74 +107,10 @@
     </footer>
 
     <!--jquery.min.js-->
-    <script src="assets/js/jquery.min.js" type="text/javascript"></script>
+    <!-- <script src="assets/js/jquery.min.js" type="text/javascript"></script> -->
 
     <!-- Include all compiled plugins (below), or include individual files as needed -->
 
-    <!--modernizr and waypoints -->
-    <script src="assets/js/modernizr.js" type="text/javascript"></script>
-    <script src="assets/js/waypoints.min.js" type="text/javascript"></script>
-
-    <!--bootstrap js-->
-    <script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
-
-    <!--plugins js-->
-    <script src="assets/js/plugins.js" type="text/javascript"></script>
-
-    <!--scrollup js-->
-    <script src="assets/js/jquery.scrollUp.min.js" type="text/javascript"></script>
-
-    <!--gmaps-->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB4RM7zOgOKq6n2fv407hX28xiL-M6vLdY"></script>
-    <script src="assets/js/gmaps.js" type="text/javascript"></script>
-
-    <!--jquery.fancybox.min.js-->
-    <script src="assets/js/jquery.fancybox.min.js" type="text/javascript"></script>
-
-    <!--jquery.magnific-popup.min.js-->
-    <script src="assets/js/jquery.magnific-popup.min.js" type="text/javascript"></script>
-
-    <!--isotope.pkgd.min.js-->
-    <script src="assets/js/isotope.pkgd.min.js" type="text/javascript"></script>
-
-    <!--jquery counterup-->
-    <script src="assets/js/counterup.min.js" type="text/javascript"></script>
-
-    <!--owl.carousel.min.js-->
-    <script src="assets/js/owl.carousel.min.js" type="text/javascript"></script>
-
-    <!--wow.min.js-->
-    <script src="assets/js/wow.min.js" type="text/javascript"></script>
-
-    <!--jquery.lettering.js-->
-    <script src="assets/js/jquery.lettering.js" type="text/javascript"></script>
-
-    <!--jquery.textillate.js-->
-    <script src="assets/js/jquery.textillate.js" type="text/javascript"></script>
-
-    <!--mixitup.js-->
-    <script src="assets/js/mixitup.js" type="text/javascript"></script>
-
-    <!--chart.js-->
-    <script src="assets/js/chart.js" type="text/javascript"></script>
-    <script src="assets/js/chart-active.js" type="text/javascript"></script>
-
-    <!--slider revolution scripts -->
-    <script src="rs-plugin/js/jquery.themepunch.tools.min.js" type="text/javascript"></script>
-    <script src="rs-plugin/js/jquery.themepunch.revolution.min.js" type="text/javascript"></script>
-
-    <!-- slider revolution 5.0 extensions  -->
-    <script src="rs-plugin/js/extensions/revolution.extension.actions.min.js" type="text/javascript"></script>
-    <script src="rs-plugin/js/extensions/revolution.extension.kenburn.min.js" type="text/javascript"></script>
-    <script src="rs-plugin/js/extensions/revolution.extension.layeranimation.min.js" type="text/javascript"></script>
-    <script src="rs-plugin/js/extensions/revolution.extension.migration.min.js" type="text/javascript"></script>
-    <script src="rs-plugin/js/extensions/revolution.extension.navigation.min.js" type="text/javascript"></script>
-    <script src="rs-plugin/js/extensions/revolution.extension.parallax.min.js" type="text/javascript"></script>
-    <script src="rs-plugin/js/extensions/revolution.extension.slideanims.min.js" type="text/javascript"></script>
-    <script src="rs-plugin/js/extensions/revolution.extension.video.min.js" type="text/javascript"></script>
-
-    <!-- custom.js-->
-    <script src="assets/js/custom.js" type="text/javascript"></script>
 
     <?php wp_footer(); ?>
 </body>
