@@ -11,6 +11,11 @@
  */
 function consult_css_js() {
 	wp_enqueue_style( 'flaticon-css', get_template_directory_uri().'/assets/css/flaticon.css', array(), '1.0', 'all' );
+
+
+	wp_enqueue_style( 'gfonts', consult_fonts_url(), array(), '1.0');
+
+
 	wp_enqueue_style( 'font-awesome-css', get_template_directory_uri().'/assets/css/font-awesome.min.css', array(), '1.0', 'all' );
 	wp_enqueue_style( 'animate-css', get_template_directory_uri().'/assets/css/animate.css', array(), '1.0', 'all' );
 	wp_enqueue_style( 'text-animation-css', get_template_directory_uri().'/assets/css/text-animation.css', array(), '1.0', 'all' );
@@ -59,6 +64,48 @@ function consult_css_js() {
 	wp_enqueue_script('cusotm-js', get_template_directory_uri().'/assets/js/custom.js', array('jquery'), '1.0.0', true);
 }
 add_action( 'wp_enqueue_scripts', 'consult_css_js' );
+
+
+// Google fonts Enqueue
+
+function consult_fonts_url() {
+$fonts_url = '';
+
+/* Translators: If there are characters in your language that are not
+* supported by Lora, translate this to 'off'. Do not translate
+* into your own language.
+*/
+$open_sans = _x( 'on', 'Open Sans font: on or off', 'consult' );
+ 
+/* Translators: If there are characters in your language that are not
+* supported by Open Sans, translate this to 'off'. Do not translate
+* into your own language.
+*/
+$Montserrat = _x( 'on', 'Montserrat font: on or off', 'consult' );
+
+
+if ( 'off' !== $open_sans || 'off' !== $Montserrat ) {
+	$font_families = array();
+	 
+	if ( 'off' !== $open_sans ) {
+	$font_families[] = 'Open+Sans:300i,400,400i,600,700,800';
+	}
+	 
+	if ( 'off' !== $Montserrat ) {
+	$font_families[] = 'Montserrat:200,300,400,500,600,700,800,900';
+	}
+}
+
+$query_args = array(
+	'family' => urlencode( implode( '|', $font_families ) ),
+	'subset' => urlencode( 'latin,latin-ext' ),
+);
+
+$fonts_url = add_query_arg( $query_args, 'https://fonts.googleapis.com/css' );
+
+ 
+return esc_url_raw($fonts_url);
+}
 
 
 

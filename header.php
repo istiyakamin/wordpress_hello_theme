@@ -11,9 +11,6 @@
     <!-- title of site -->
     <title>Home page</title>
 
-    <!-- google fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300i,400,400i,600,700,800%7CMontserrat:200,300,400,500,600,700,800,900" rel="stylesheet">
-
     <!-- favicon -->
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 
@@ -75,7 +72,7 @@
                     <div class="navbar-other">
                         <div class="align-right text-right">
                             <div class="navbar-brand">
-								<a href="index-01.html"><img alt="images" src="images/logo_consult.png"></a>
+								<a href="index-01.html"><img alt="images" src="<?php echo get_template_directory_uri() ?>/images/logo_consult.png"></a>
 							</div>
                         </div>
                     </div>

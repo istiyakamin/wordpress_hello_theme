@@ -6,7 +6,7 @@
             <ul>
                 <li data-index="digital_slide_1" data-transition="crossfade" data-slotamount="default"  data-easein="default" data-easeout="default" data-masterspeed="500"  data-rotate="0"  data-saveperformance="off"  data-title="Focus">
 
-                    <img src="images/slider_img_01.jpg" alt="images"  data-lazyload="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="off" class="rev-slidebg" data-no-retina>
+                    <img src="<?php echo get_template_directory_uri() ?>/images/slider_img_01.jpg" alt="images"  data-lazyload="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="off" class="rev-slidebg" data-no-retina>
 
                     <div class="tp-caption tp-resizeme"
                         id="slide-1-layer-1"
@@ -113,7 +113,7 @@
 
                 <li data-index="digital_slide_2" data-transition="crossfade" data-slotamount="default"  data-easein="default" data-easeout="default" data-masterspeed="500"  data-rotate="0"  data-saveperformance="off"  data-title="Focus">
 
-                    <img src="images/slider_img_02.jpg" alt="images"  data-lazyload="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="off" class="rev-slidebg" data-no-retina>
+                    <img src="<?php echo get_template_directory_uri() ?>/images/slider_img_02.jpg" alt="images"  data-lazyload="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="off" class="rev-slidebg" data-no-retina>
 
                     <div class="tp-caption  tp-resizeme"
                         id="slide-2-layer-1"
@@ -213,7 +213,7 @@
                 </div>
                 <div class="col-md-6">
                     <div class="looking_for_right image_fulwidth wow fadeInRight" data-wow-delay="300ms">
-                        <img src="images/we_are_alwayes.jpg" alt="images">
+                        <img src="<?php echo get_template_directory_uri() ?>/images/we_are_alwayes.jpg" alt="images">
                     </div>
                 </div>
             </div><!--row -->
@@ -228,7 +228,7 @@
 				</div>
                 <div class="col-md-4 col-sm-6">
                     <div class="choose_us_single para_default image_fulwidth text-center wow fadeInLeft" data-wow-delay="300ms">
-                        <img src="images/why_choos_us_01.jpg" alt="images">
+                        <img src="<?php echo get_template_directory_uri() ?>/images/why_choos_us_01.jpg" alt="images">
                         <h3>Consultancy services</h3>
                         <p>Lorem ipsum dolor sit amet, elit. Donec nec ornare purus. Nulla non augue ut mi mollis eget id arcu. Rem autem voluptatem</p>
                     </div>
@@ -236,7 +236,7 @@
 
                 <div class="col-md-4 col-sm-6">
                     <div class="choose_us_single para_default image_fulwidth text-center wow fadeInLeft" data-wow-delay="500ms">
-                        <img src="images/why_choos_us_02.jpg" alt="images">
+                        <img src="<?php echo get_template_directory_uri() ?>/images/why_choos_us_02.jpg" alt="images">
                         <h3>Consultancy services</h3>
                         <p>Lorem ipsum dolor sit amet, elit. Donec nec ornare purus. Nulla non augue ut mi mollis eget id arcu. Rem autem voluptatem</p>
                     </div>
@@ -244,7 +244,7 @@
 
                 <div class="col-md-4 col-sm-6">
                     <div class="choose_us_single para_default image_fulwidth text-center wow fadeInLeft" data-wow-delay="700ms">
-                        <img src="images/why_choos_us_03.jpg" alt="images">
+                        <img src="<?php echo get_template_directory_uri() ?>/images/why_choos_us_03.jpg" alt="images">
                         <h3>Consultancy services</h3>
                         <p>Lorem ipsum dolor sit amet, elit. Donec nec ornare purus. Nulla non augue ut mi mollis eget id arcu. Rem autem voluptatem</p>
                     </div>
@@ -296,7 +296,7 @@
                 <div class="col-md-4">
                     <div class="single_blog_h_active">
                         <div class="single_blog_item_area para_default image_fulwidth text-center">
-                            <a href="#"><img src="images/latest_blog_01.jpg" alt="images"></a>
+                            <a href="#"><img src="<?php echo get_template_directory_uri() ?>/images/latest_blog_01.jpg" alt="images"></a>
                             <h4>25 JUNE 2016</h4>
                             <h3><a href="blog-single.html">Make your productive teams</a></h3>
                             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
@@ -306,7 +306,7 @@
                 <div class="col-md-4">
                     <div class="single_blog_h_active">
                         <div class="single_blog_item_area para_default image_fulwidth text-center">
-                            <a href="#"><img src="images/latest_blog_01.jpg" alt="images"></a>
+                            <a href="#"><img src="<?php echo get_template_directory_uri() ?>/images/latest_blog_01.jpg" alt="images"></a>
                             <h4>25 JUNE 2016</h4>
                             <h3><a href="blog-single.html">Make your productive teams</a></h3>
                             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
@@ -316,7 +316,7 @@
                 <div class="col-md-4">
                     <div class="single_blog_h_active">
                         <div class="single_blog_item_area para_default image_fulwidth text-center">
-                            <a href="#"><img src="images/latest_blog_01.jpg" alt="images"></a>
+                            <a href="#"><img src="<?php echo get_template_directory_uri() ?>/images/latest_blog_01.jpg" alt="images"></a>
                             <h4>25 JUNE 2016</h4>
                             <h3><a href="blog-single.html">Make your productive teams</a></h3>
                             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
