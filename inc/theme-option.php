@@ -5,5 +5,8 @@ register_nav_menus( array(
 	'footer_menu' => 'Footer Menu',
 ) );
 
+add_theme_support( 'post-thumbnails' ); 
+
+
 
  ?> 

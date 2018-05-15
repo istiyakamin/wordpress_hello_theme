@@ -1,76 +1,112 @@
 <?php get_header(); ?>
 
     
-    <div class="page_title_banner blog_sidebar_title_bg">
+    <div class="page_title_banner banner_blog_single_title_bg">
         <div class="page_title_banner_overlay"></div>
         <div class="container">
             <div class="page_title_banner_text text-center">
-                <h2 class="banner_effect">Blog Sidebar</h2>
+                <h2 class="banner_effect"><?php the_title() ?></h2>
                 <ul class="breadcrumb">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Pages</a></li>
-                    <li class="active">Blog sidebar</li>
+                    <li class="active">blog single</li>
                 </ul>
             </div>
         </div><!--container-->
     </div><!-- page_title_banner -->
+	
 
     <div class="blog_page_area">
         <div class="container">
             <div class="row">
-			
-			
                 <div class="col-md-8">
-				
                     <div class="blog_left_side_area">
-                        
                         <?php 
                             if ( have_posts() ) :
                             while ( have_posts() ) : the_post();
                         ?>
 
-                        <div class="blog_left_single_item">
-                            <div class="blog_pic image_fulwidth">
-                                <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('medium'); ?></a>
-                                <h4 class="date_position"><?php echo get_the_date('j F Y') ?></h4>
-                            </div>
+                        <div class="blog_pic image_fulwidth">
+                            <?php the_post_thumbnail() ?>
+                            <h4 class="date_position"><?php echo get_the_date('j F Y') ?></h4>
+                        </div>
 
-                            <div class="blog_left_single_content para_default">
-                                <h3><a href="<?php the_permalink(); ?>"><?php echo get_the_title(); ?></a></h3>
-                                <p><?php echo wp_trim_words(get_the_content(),40); ?></p>
-                            </div>
-                        </div><!-- blog_left_single_item -->
+                        <?php the_content() ?>
 
-                    <?php 
+                        <?php 
                         endwhile;
                         else :
-                            get_template_part( 'template-parts/page/content', 'none' );
-                        endif;
-                        wp_reset_postdata();
-                     ?>
+                                get_template_part( 'template-parts/page/content', 'none' );
+                            endif;
+                            wp_reset_postdata();
+                         ?>
+
                         
-                        <div class="blog_pagination">
-                            <nav>
-                                <ul class="pagination pagination-lg">
 
-                                    <?php the_posts_pagination( array(
-                                        'mid_size' => 2,
-                                        'prev_text' => __( '', 'textdomain' ),
-                                        'next_text' => __( '<i class="flaticon-right-arrow"></i>', 'textdomain' ),
-                                    ) ); ?>
+                        <div class="blog_tag">
+                            <a href="#">Business</a>
+                            <a href="#">Financial</a>
+                            <a href="#">Investment</a>
+                            <a href="#">Consult</a>
+                        </div>
 
-                                    
-                                </ul>
-                            </nav>
+                        <div class="share_blog_single_in_social">
+                            <h4>
+                                <span>Share</span> 
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-google-plus"></i></a>
+                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                            </h4>
+                        </div>
+						
+			             <div class="content_blog_a fix">
+							<div class="e_blog_A">
+								 <img src="images/we_are_alwayes.jpg" alt="a_text_pic">
+							</div>
+							<div class="blog_a_text">
+								<h5><a href="#">Tomas Anderson</a></h5>
+								<p>Lorem ipsum dolor sit amet, lacus eu erat integer bibendum rutrum, sed arcu molestie, in quis ornare, rhoncus scelerisque velit, nam</p>
+							</div>
+						</div>
+
+                        <div class="consultency_comments_form">
+                            <h2 class="comments_title">Leave a Reply</h2>
+                            <div class="row">
+                                <form action="#" method="post">
+                                    <div class="col-md-6 col-sm-6">
+                                        <div class="form-group">
+                                            <input type="email" class="form-control" placeholder="E-mail*">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6 col-sm-6">
+                                        <div class="form-group">
+                                            <input type="url" class="form-control" placeholder="Website">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <textarea name="message" class="form-control" rows="4" placeholder="Your Comment"></textarea>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <div class="send_me_ph">
+                                                <a class="submit_btn_quick_contact" href="#">Submit Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
                         </div>
                     </div><!-- blog_left_side_area -->
-					
                 </div><!-- col-md-8 -->
-				
-				
+
                 <div class="col-md-4">
                     <div class="blog_right_side_area">
-					
                         <div class="blog_right_widget">
                             <div class="blog_widget">
                                 <form action="#" method="post" class="blog_search">
@@ -79,7 +115,6 @@
                                 </form>
                             </div>
                         </div><!-- blog_right_widget  -->
-						
                         
                         <div class="blog_right_widget">
                             <div class="blog_widget">
@@ -174,8 +209,8 @@
                         </div><!-- blog_right_widget  -->
                     </div>
                 </div><!-- col-md-4 -->
-            </div><!-- row -->
+            </div><!-- row -->  
         </div><!-- container -->
     </div><!-- blog_page_area -->
 
-   <?php get_footer(); ?>
+  <?php get_footer(); ?>
