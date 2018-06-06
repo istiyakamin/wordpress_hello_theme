@@ -44,25 +44,22 @@
                         
 
                         <div class="blog_tag">
-                            <a href="#">Business</a>
-                            <a href="#">Financial</a>
-                            <a href="#">Investment</a>
-                            <a href="#">Consult</a>
+                            <?php the_tags( ' ', ' ', '</br> ' ) ?>
                         </div>
 
                         <div class="share_blog_single_in_social">
                             <h4>
                                 <span>Share</span> 
-                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="http://www.facebook.com/sharer.php?u=<?php the_permalink();?>&t=<?php the_title(); ?>" target="blank""><i class="fa fa-facebook"></i></a>
                                 <a href="#"><i class="fa fa-twitter"></i></a>
                                 <a href="#"><i class="fa fa-google-plus"></i></a>
                                 <a href="#"><i class="fa fa-linkedin"></i></a>
                             </h4>
                         </div>
 						
-			             <div class="content_blog_a fix">
+			            <div class="content_blog_a fix">
 							<div class="e_blog_A">
-								 <img src="images/we_are_alwayes.jpg" alt="a_text_pic">
+								 <?php echo get_avatar(get_the_author_meta('ID'), 100) ?>
 							</div>
 							<div class="blog_a_text">
 								<h5><a href="#">Tomas Anderson</a></h5>
