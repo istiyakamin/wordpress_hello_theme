@@ -5,12 +5,12 @@
 // -----------------------------------------------------------------------------------------------
 // ===============================================================================================
 $settings           = array(
-  'menu_title'      => 'Framework',
+  'menu_title'      => 'Consult',
   'menu_type'       => 'menu', // menu, submenu, options, theme, etc.
   'menu_slug'       => 'cs-framework',
   'ajax_save'       => false,
   'show_reset_all'  => false,
-  'framework_title' => 'Codestar Framework <small>by Codestar</small>',
+  'framework_title' => 'Consult Framework <small>by istiyak amin</small>',
 );
 
 // ===============================================================================================
@@ -23,6 +23,38 @@ $options        = array();
 // ----------------------------------------
 // a option section for options overview  -
 // ----------------------------------------
+
+
+
+// ----------------------------------------
+// First section using Testimonial  -
+// ----------------------------------------
+$options[]   = array(
+  'name'   => 'FSection', 
+  'title'  => 'Fsection',
+  'icon'   => 'fa fa-pencil',
+  'fields' => array(
+
+      array(
+      'id'      => 'field_1',
+      'type'    => 'text',
+      'title'   => 'Title is here',
+    ),
+
+      array(
+      'id'      => 'field_2',
+      'type'    => 'wysiwyg',
+      'title'   => 'Description',
+    ),
+
+      array(
+      'id'      => 'field_3',
+      'type'    => 'image',
+      'title'   => 'Upload Image',
+    ),
+
+  ));
+
 $options[]      = array(
   'name'        => 'overwiew',
   'title'       => 'Overview',
