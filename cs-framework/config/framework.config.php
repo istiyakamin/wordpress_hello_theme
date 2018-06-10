@@ -42,6 +42,12 @@ $options[]   = array(
     ),
 
       array(
+      'id'      => 'field_1c',
+      'type'    => 'color_picker',
+      'title'   => 'Title color',
+    ),
+
+      array(
       'id'      => 'field_2',
       'type'    => 'wysiwyg',
       'title'   => 'Description',

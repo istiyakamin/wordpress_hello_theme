@@ -206,8 +206,8 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="looking_for_left para_default">
-                        <h3><?php echo cs_get_option('field_1') ?></h3>
-                        <p><?php echo cs_get_option('field_2') ?></p>
+                        <h3 style="color:<?php echo cs_get_option('field_1c') ?>"><?php echo esc_html(cs_get_option('field_1')) ?></h3>
+                        <p><?php echo esc_html(cs_get_option('field_2')) ?></p>
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -216,7 +216,7 @@
                             $image_id = cs_get_option( 'field_3' );
                             $attachment = wp_get_attachment_image_src( $image_id, 'full' );
                          ?>
-                        <img src="<?php echo $attachment['0']; ?>" alt="images">
+                        <img src="<?php echo esc_url($attachment['0']) ?>" alt="images">
                     </div>
                 </div>
             </div><!--row -->
