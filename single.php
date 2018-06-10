@@ -56,49 +56,15 @@
                                 <a href="#"><i class="fa fa-linkedin"></i></a>
                             </h4>
                         </div>
-						
-			            <div class="content_blog_a fix">
-							<div class="e_blog_A">
-								 <?php echo get_avatar(get_the_author_meta('ID'), 100) ?>
-							</div>
-							<div class="blog_a_text">
-								<h5><a href="#">Tomas Anderson</a></h5>
-								<p>Lorem ipsum dolor sit amet, lacus eu erat integer bibendum rutrum, sed arcu molestie, in quis ornare, rhoncus scelerisque velit, nam</p>
-							</div>
-						</div>
 
-                        <div class="consultency_comments_form">
-                            <h2 class="comments_title">Leave a Reply</h2>
-                            <div class="row">
-                                <form action="#" method="post">
-                                    <div class="col-md-6 col-sm-6">
-                                        <div class="form-group">
-                                            <input type="email" class="form-control" placeholder="E-mail*">
-                                        </div>
-                                    </div>
+                        <?php 
+                                    // If comments are open or we have at least one comment, load up the comment template.
+                            if ( comments_open() || get_comments_number() ) :
+                                comments_template();
+                            endif;
+                         ?>
 
-                                    <div class="col-md-6 col-sm-6">
-                                        <div class="form-group">
-                                            <input type="url" class="form-control" placeholder="Website">
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-12">
-                                        <div class="form-group">
-                                            <textarea name="message" class="form-control" rows="4" placeholder="Your Comment"></textarea>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-12">
-                                        <div class="form-group">
-                                            <div class="send_me_ph">
-                                                <a class="submit_btn_quick_contact" href="#">Submit Now</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
+                        
                     </div><!-- blog_left_side_area -->
                 </div><!-- col-md-8 -->
 
