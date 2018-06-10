@@ -61,6 +61,48 @@ $options[]   = array(
 
   ));
 
+
+// ------------------------------------------------
+// Second section using Testimonial & accoording  -
+// ------------------------------------------------
+$options[]   = array(
+  'name'   => 'SSection', 
+  'title'  => 'Ssection',
+  'icon'   => 'fa fa-star',
+  'fields' => array(
+
+    array(  
+      'id' => 'group_section',
+      'title' =>'Group Section',
+      'type' => 'group',
+      'button_title' => 'Add New',
+      'accourding_title' => 'Add New Field',
+      'fields' => array(
+          array(
+          'id'      => 'field_4',
+          'type'    => 'text',
+          'title'   => 'Title is here',
+        ),
+
+          array(
+          'id'      => 'field_5',
+          'type'    => 'textarea',
+          'title'   => 'Description',
+        ),
+
+          array(
+          'id'      => 'field_6',
+          'type'    => 'image',
+          'title'   => 'Upload Image',
+        ),
+      ),
+    ),
+      
+
+  ),);
+
+
+
 $options[]      = array(
   'name'        => 'overwiew',
   'title'       => 'Overview',
