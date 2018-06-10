@@ -25,6 +25,12 @@
     <?php wp_head(); ?>
 </head>
 <body>
+
+  <?php 
+if(cs_get_option('field_7')){
+  ?>
+
+
     <!--Start Preloader-->
     <div class="preloader">
         <div class="preloader-inner-area">
@@ -36,6 +42,9 @@
         </div>
     </div>
     <!--End Preloader-->
+
+    <?php }
+   ?>
 
     <header id="header" class="header_areaa">
         <nav class="navbar extended">

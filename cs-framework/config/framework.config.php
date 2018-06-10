@@ -102,6 +102,24 @@ $options[]   = array(
   ),);
 
 
+// ------------------------------------------------
+// Third section Preloader On & Off  -
+// ------------------------------------------------
+$options[]   = array(
+  'name'   => 'Preloader', 
+  'title'  => 'Preloader on Off',
+  'icon'   => 'fa fa-circle',
+  'default' => true,
+  'fields' => array(
+
+      array(
+      'id'      => 'field_7',
+      'type'    => 'switcher',
+      'title'   => 'Preloader on or off',
+    ),
+    ),
+);
+
 
 $options[]      = array(
   'name'        => 'overwiew',
