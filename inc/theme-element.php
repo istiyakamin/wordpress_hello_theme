@@ -56,5 +56,52 @@ function consult_section_1( $atts = array(), $content = '' ) {
 add_shortcode( 'section_1_base', 'consult_section_1' );
 
 
+/**
+ * Returns the parsed shortcode.
+ *
+ * @param array   {
+ *     Attributes of the shortcode.
+ *
+ *     @type string $id ID of...
+ * }
+ * @param string  Shortcode content.
+ *
+ * @return string HTML content to display the shortcode.
+ */
+function work_section( $atts = array(), $content = '' ) {
+    extract(shortcode_atts( array(
+		'work_section_icon' => 'fa fa-star',
+		'work_section_title' => 'Work Section title',
+		'work_section_desc' => 'Work Section description',
+	), $atts, 'work_section_base' ));
+
+	ob_start();
+?>
+
+
+	<div class="about_section_area">
+        <div class="container-fluid">
+            <div class="row">
+
+				
+                <div class="col-md-4 col-sm-6">
+                    <div class="about_Single_item para_default text-center wow fadeInLeft" data-wow-delay="300ms">
+                        <i class="<?php echo esc_attr( $work_section_icon ) ?>"></i>
+                        <h3><?php echo esc_html( $work_section_title ) ?></h3>
+                        <p><?php echo esc_html( $work_section_desc ) ?></p>
+                    </div>
+                </div><!--col-md-4 -->
+
+ 
+            </div><!--row -->
+        </div><!--container-fluid -->
+    </div><!--about_section_area -->
+
+<?php 
+	return ob_get_clean();
+}
+add_shortcode( 'work_section_base', 'work_section' );
+
+
 
  ?>

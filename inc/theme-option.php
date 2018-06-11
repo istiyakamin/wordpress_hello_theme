@@ -40,6 +40,44 @@ function consult_intrigatewithvc(){
 
 	));
 
+
+	// Our Works section
+
+	vc_map(array(
+		"name"=>__('Work Section','text-domain'),
+		"description"=>"this is my work section addon",
+		"base"=>"work_section_base",
+		"category"=>"Consult",
+		"icon"=>get_template_directory_uri()."/images/favicon.ico",
+		"params"=>array(
+
+			array(
+				'param_name'=>'work_section_icon',
+				'type'=>'iconpicker',
+				'heading'=>'Work Section Icon Picker',
+			),
+
+			array(
+				'param_name'=>'work_section_title',
+				'type'=>'textfield',
+				'heading'=>'Work Section title',
+				'value'=>'work section title',
+				'group' => 'istiyak',
+			),
+
+
+			array(
+				'param_name'=>'work_section_desc',
+				'type'=>'textarea',
+				'heading'=>'Work Section Description',
+				'value'=>'description is here',
+				'group' => 'istiyak',
+			),
+
+		),
+
+	));
+
 }
 add_action('vc_before_init', 'consult_intrigatewithvc');
 
