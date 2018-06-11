@@ -24,6 +24,18 @@ function consult_intrigatewithvc(){
 				'value'=>'description value is here',
 			),
 
+			array(
+				'param_name'=>'title_section_desc_1_color',
+				'type'=>'colorpicker',
+				'heading'=>'Section one Description color',
+			),
+
+			array(
+				'param_name'=>'title_section_1_img',
+				'type'=>'attach_images',
+				'heading'=>'Section one Description images',
+			),
+
 		),
 
 	));
