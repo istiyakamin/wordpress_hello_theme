@@ -29,7 +29,15 @@ $options        = array();
 // ----------------------------------------
 // First section using Testimonial  -
 // ----------------------------------------
+
 $options[]   = array(
+  'name'     => 'Full_Section',
+  'title'    => 'Full section',
+  'icon'     => 'fa fa-plus-circle',
+  'sections' => array(
+
+
+array(
   'name'   => 'FSection', 
   'title'  => 'Fsection',
   'icon'   => 'fa fa-pencil',
@@ -59,13 +67,13 @@ $options[]   = array(
       'title'   => 'Upload Image',
     ),
 
-  ));
+  )),
 
 
 // ------------------------------------------------
 // Second section using Testimonial & accoording  -
 // ------------------------------------------------
-$options[]   = array(
+array(
   'name'   => 'SSection', 
   'title'  => 'Ssection',
   'icon'   => 'fa fa-star',
@@ -99,13 +107,13 @@ $options[]   = array(
     ),
       
 
-  ),);
+  ),),
 
 
 // ------------------------------------------------
 // Third section Preloader On & Off  -
 // ------------------------------------------------
-$options[]   = array(
+array(
   'name'   => 'Preloader', 
   'title'  => 'Preloader on Off',
   'icon'   => 'fa fa-circle',
@@ -118,6 +126,8 @@ $options[]   = array(
       'title'   => 'Preloader on or off',
     ),
     ),
+),
+),
 );
 
 
