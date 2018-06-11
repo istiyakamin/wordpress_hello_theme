@@ -201,7 +201,7 @@
         </div>
     </div><!-- END REVOLUTION SLIDER -->
 
-    <div class="looking_for_specific_area">
+        <div class="looking_for_specific_area">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
