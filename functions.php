@@ -7,6 +7,7 @@
   require_once(get_template_directory() . '/inc/custom-widget.php');
   require_once get_template_directory() .'/cs-framework/cs-framework.php';
   require_once(get_template_directory() . '/inc/shortcode.php');
+  require_once(get_template_directory() . '/inc/custom-portfolio.php');
 
   register_nav_menus( array(
 	'header_menu' => 'Header Menu',

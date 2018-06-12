@@ -51,10 +51,43 @@ function consult_intrigatewithvc(){
 		"icon"=>get_template_directory_uri()."/images/favicon.ico",
 		"params"=>array(
 
+
 			array(
-				'param_name'=>'work_section_icon',
-				'type'=>'iconpicker',
-				'heading'=>'Work Section Icon Picker',
+		      'type' => 'param_group',
+		      'param_name' => 'work_group',
+		      'params' => array(
+
+		      	array(
+				'param_name'=>'work_section_dropdown',
+				'heading' => 'work section 3 dropdown',
+				'type'=>'dropdown',
+				'value'=>array(
+					'select an option'=>'',
+					'Icon'=>'fontawesome',
+					'Image'=>'custom',
+				),
+			),
+
+			array(
+				'param_name'  =>'work_section_icon',
+				'type'        =>'iconpicker',
+				'heading'     =>'Work Section Icon Picker',
+				'dependency'  => array(
+
+					'element' => 'work_section_dropdown',
+					'value'   => 'fontawesome',
+				),
+			),
+
+			array(
+				'param_name'  =>'work_section_image_1',
+				'type'        =>'attach_images',
+				'heading'     =>'Work Section Image select',
+				'dependency'  => array(
+					
+					'element' => 'work_section_dropdown',
+					'value'   => 'custom',
+				),
 			),
 
 			array(
@@ -73,6 +106,12 @@ function consult_intrigatewithvc(){
 				'value'=>'description is here',
 				'group' => 'istiyak',
 			),
+		        
+		      ),
+
+		    ),
+
+			
 
 		),
 

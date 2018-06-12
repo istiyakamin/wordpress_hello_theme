@@ -73,6 +73,7 @@ function work_section( $atts = array(), $content = '' ) {
 		'work_section_icon' => 'fa fa-star',
 		'work_section_title' => 'Work Section title',
 		'work_section_desc' => 'Work Section description',
+		'work_group' => '',
 	), $atts, 'work_section_base' ));
 
 	ob_start();
@@ -83,15 +84,20 @@ function work_section( $atts = array(), $content = '' ) {
         <div class="container-fluid">
             <div class="row">
 
+            	<?php 
+            	$work_area = vc_param_group_parse_atts($work_group);
+            	?>
+            	
+
 				
                 <div class="col-md-4 col-sm-6">
                     <div class="about_Single_item para_default text-center wow fadeInLeft" data-wow-delay="300ms">
-                        <i class="<?php echo esc_attr( $work_section_icon ) ?>"></i>
+                        <i class="<?php echo esc_attr($single_work['work_section_icon']) ?>"></i>
                         <h3><?php echo esc_html( $work_section_title ) ?></h3>
                         <p><?php echo esc_html( $work_section_desc ) ?></p>
                     </div>
                 </div><!--col-md-4 -->
-
+				
  
             </div><!--row -->
         </div><!--container-fluid -->
